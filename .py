@@ -1,9 +1,8 @@
-def mirrored_triangle(n):
-    for i in range(1, n + 1):
-        spaces = '' * (n - 1)
-        letters  = 'A' * i
-        print(spaces + letters)
+try :
+    num = int(input("Enter your number :"))
+    print(num)
+except ValueError as ex:
+    print("exception" , ex)
 
-rows = int(input("Enter the number of rows :"))
 
-mirrored_triangle(rows)
+print("I am outside the try block")
