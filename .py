@@ -1,8 +1,11 @@
-try :
-    num = int(input("Enter your number :"))
-    print(num)
-except ValueError as ex:
-    print("exception" , ex)
+from datetime import date , datetime
 
+today = date.today()
 
-print("I am outside the try block")
+now = datetime.now()
+
+print("Todays date is :" , today)
+
+print("\nCurrent Date and time :" , now)
+
+print("\n Data components:", today.year, today.month , today.day  )
