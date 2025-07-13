@@ -1,18 +1,8 @@
-mylist = [3, 4, 5, 7, 1, 9]
-print("original list : " , mylist)
+import math
 
-count = 0
-
-for i in mylist:
-    count = count + i
-
-avg = count/len(mylist)
-
-print("sum :" , count)
-print("average :" , avg)
-print()
-
-mylist.sort()
-print(mylist)
-
-print("small element is " , mylist[0])
+num = float(input("Enter a number to find its square root :"))
+if num < 0:
+    print("square root is not defined for negative number")
+else:
+    sqrt = math.sqrt(num)
+    print(f"The square root of {num} is {sqrt}")
