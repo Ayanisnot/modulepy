@@ -1,12 +1,22 @@
-birthday1 = "2010-4-17"
-birthday2 = "2011-9-27"
-birthday3 = "2010-6-10"
-birthday4 = "2010-2-17"
-birthday5 = "2010-9-21"
+age_input = input("enter your age :")
+
+if age_input.isdigit():
+    age = int(age_input)
+
+    if age <= 0:
+     print("Error: Age must a positive number.")
+
+    else:
+     print("age is valid.")
 
 
-print("birthday 1:" , birthday1)
-print("birthday 2:" , birthday2)
-print("birthday 3:" , birthday3)
-print("birthday 4:" , birthday4)
-print("birthday 5:" , birthday5)
+    if age % 2 == 0:
+      print("You age is even.")
+    else:
+      print("Your age is odd.")
+
+
+else:
+  print("Invalid input. Please enter a number")
+
+    
