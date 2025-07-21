@@ -1,6 +1,7 @@
-base = float(input("Enter the base number :"))
-exponent = int(input("Enter the exponent (power) :"))
+num = 3
+if num > 0:
+  print(num ," is a positive number")
 
-result = base ** exponent
-
-print(f"{base} raised to the {exponent} is {result}")
+num = -1
+if num < 0:
+  print(num , " is a negative number")
